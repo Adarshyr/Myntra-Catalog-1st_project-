@@ -28,12 +28,17 @@
 /*<replacement>*/
 
 var pna = require('process-nextick-args');
+
+
 /*</replacement>*/
 
 module.exports = Writable;
 
 /* <replacement> */
 function WriteReq(chunk, encoding, cb) {
+    
+    
+    
   this.chunk = chunk;
   this.encoding = encoding;
   this.callback = cb;
